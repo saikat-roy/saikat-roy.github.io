@@ -62,6 +62,9 @@ ninja.data = [{
           section: "News",},{id: "news-presented-on-large-scale-supervised-representation-learning-with-convnexts-in-medical-image-segmentation-at-the-sprint-ai-training-for-african-medical-imaging-knowledge-translation-spark-academy",
           title: 'Presented on large-scale supervised representation learning with ConvNeXts in Medical Image Segmentation at...',
           description: "",
+          section: "News",},{id: "news-my-phd-work-on-mednext-miccai-2023-was-selected-as-a-finalist-for-the-miccai-2026-young-scientist-publication-impact-award",
+          title: 'My PhD work on MedNeXt (MICCAI 2023) was selected as a finalist for...',
+          description: "",
           section: "News",},{
         id: 'social-cv',
         title: 'CV',
