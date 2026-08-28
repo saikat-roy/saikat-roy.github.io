@@ -32,4 +32,4 @@ I was previously a a Doctoral Researcher at the **German Cancer Research Center 
 
 During my Ph.D. I also spent time as a Research Intern at **Siemens Healthineers, USA** developing patch-based diffusion models for medical image denoising and super-resolution. My research specializes in deep representation learning for predictive and generative problems, particularly applying Transformer and self-attention techniques to 3D medical image segmentation.
 
-Before my Ph.D., I completed an M.Sc. in Computer Science at the University of Bonn, working alongside the German Center for Neurodegenerative Diseases (DZNE) on spatially ensembled 3D deep convolutional neural networks for neuroanatomy segmentation.
+Before my Ph.D., I completed an M.Sc. in Computer Science at the University of Bonn, working alongside the German Center for Neurodegenerative Diseases (DZNE) on 3D deep representation learning for neuroanatomy segmentation.
