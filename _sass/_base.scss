@@ -409,7 +409,23 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.about-bio {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
 // Social (bottom)
+
+.news {
+  margin-bottom: 2rem;
+
+  .table-responsive {
+    border: 2px solid var(--global-divider-color);
+    border-radius: 6px;
+    padding: 0.25rem 1rem;
+  }
+}
 
 .social {
   text-align: center;

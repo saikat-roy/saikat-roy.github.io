@@ -2,96 +2,168 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Saikat Roy
+    - name: Location
+      value: Heidelberg, Germany
+    - name: Email
+      value: contact@saikatroy.me
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D., Computer Science
+      institution: Heidelberg University, Heidelberg, Germany
+      year: 2023 - 2026
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Thesis: Transformers and Self-Attention for Medical Image Segmentation"
+    - title: M.Sc., Computer Science
+      institution: University of Bonn, Bonn, Germany
+      year: 2017 - 2021
       description:
-        - Description 1.
-        - Description 2.
+        - "Thesis: Fully-3D Deep CNNs for Segmentation of Neuroanatomy"
+    - title: M.E., Software Engineering
+      institution: Jadavpur University, Kolkata, India
+      year: 2013 - 2015
+      description:
+        - "Thesis: Supervised-Layerwise Training of Deep CNNs for Classification"
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Senior Machine Learning Engineer
+      institution: mediaire GmbH, Berlin, Germany
+      year: May 2026 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Leading AI development for MRI-based medical image analysis products.
+    - title: Visiting Researcher
+      institution: Diagnostic Image Analysis Group (DIAG), Radboud University Medical Center, Nijmegen, Netherlands
+      year: Oct. 2025 - Present
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - AI for prostate cancer diagnosis.
+    - title: Doctoral Researcher (Full-Time)
+      institution: German Cancer Research Center (DKFZ), Heidelberg, Germany
+      year: Mar. 2021 - Feb. 2026
       description:
+        - Developed one of the highest-cited CNN architectures of the last 2 years, using Transformer-based insights, for 3D medical image segmentation.
+        - "Research topics: semantic segmentation, Transformers, representation learning, transfer learning, self-supervised training, foundation models."
+    - title: Research Intern (Full-Time)
+      institution: Siemens Healthineers, Princeton, USA
+      year: Jul. 2024 - Nov. 2024
+      description:
+        - Developed patch-based diffusion models for medical image denoising and super-resolution at 25% less memory with no performance loss.
+        - "Research topics: diffusion models, denoising, super-resolution."
+    - title: Research Assistant (Half-Time)
+      institution: German Center for Neurodegenerative Diseases (DZNE), Bonn, Germany
+      year: Nov. 2018 - Feb. 2021
+      description:
+        - Developed spatially ensembled 3D deep convolutional neural networks for state-of-the-art segmentation of 95 structures in brain MRIs in 30 seconds.
+        - "Research topics: semantic segmentation, deep CNNs, neuroimaging."
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+- title: Publications (Selected)
+  type: list
+  contents:
+    - '<strong>Primus: Enforcing Attention Usage for 3D Medical Image Segmentation.</strong> TMLR, 2026. <a href="/publications/#wald2026primus">Details</a>'
+    - '<strong>Investigating the Feasibility of Patch-Based Inference for Generalized Diffusion Priors in Inverse Problems for Medical Images.</strong> IEEE ISBI, 2025. Oral Presentation. <a href="/publications/#roy2025investigating">Details</a>'
+    - '<strong>Skeleton Recall Loss for Connectivity Conserving and Resource Efficient Segmentation of Thin Tubular Structures.</strong> ECCV, 2024. 100+ citations. <a href="/publications/#kirchhoff2024skeleton">Details</a>'
+    - '<strong>Touchstone Benchmark: Are We on the Right Way for Evaluating AI Algorithms for Medical Segmentation?</strong> NeurIPS, 2024. Benchmark Win: MedNeXt. <a href="/publications/#bassi2024touchstone">Details</a>'
+    - '<strong>nnU-Net Revisited: A Call for Rigorous Validation in 3D Medical Image Segmentation.</strong> MICCAI, 2024. Benchmark Win: MedNeXt, 700+ citations. <a href="/publications/#isensee2024nnu">Details</a>'
+    - '<strong>MedNeXt: Transformer-driven Scaling of ConvNets for Medical Image Segmentation.</strong> MICCAI, 2023. Early Accept: Top 14%, 700+ citations. <a href="/publications/#roy2023mednext">Details</a>'
+    - 'See the full <a href="/publications/">publications page</a> for the complete list.'
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/MIC-DKFZ/MedNeXt">MIC-DKFZ/MedNeXt</a>
+      year: Author & maintainer
+      description: 500+ stars.
+    - title: <a href="https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1">MIC-DKFZ/nnUNet (nnunetv1 branch)</a>
+      year: Contributor
+      description: 1000+ stars.
+    - title: <a href="https://github.com/MIC-DKFZ/batchgenerators">MIC-DKFZ/batchgenerators</a>
+      year: Contributor
+      description: 500+ stars.
+    - title: <a href="https://github.com/Deep-MI/3d-neuro-seg">Deep-MI/3d-neuro-seg</a>
+      year: Contributor
+      description: 250+ stars.
+
+- title: Talks and Research Visits
+  type: time_table
+  contents:
+    - title: Speaker on MedNeXt-v2 at Raysearch Laboratories, Sweden
+      year: 2026
+    - title: Speaker at Sprint AI Training for African Medical Imaging Knowledge Translation (SPARK) Academy
+      year: 2026
+    - title: Research visit to Diagnostic Image Analysis Group (DIAG), Radboud UMC, Netherlands
+      year: 2025
+    - title: Speaker at Machine Learning Galore Talks, Heidelberg University, Germany
+      year: 2025
+    - title: 'Keynote speaker, MICCAI 2024 Challenge: "Body Maps: Towards a 3D Atlas of the Human Body"'
+      year: 2024
+    - title: Research talk and visit to Luxembourg Centre for Systems Biomedicine, University of Luxembourg
+      year: 2023
+    - title: Invited talk at Medical and Environmental Computing Lab, TU Darmstadt, Germany
+      year: 2023
+    - title: 'Tutorial: "Transformers in Medical Image Analysis", BVM, Germany'
+      year: 2022 - 2023
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2021
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Oxford Machine Learning (OxML) Summer School
+    - year: 2015
       items:
-        - Max Planck Medal
+        - "Erasmus Mundus FUSION Scholarship for PhD mobility to University of Evora, Portugal (offer not accepted)"
+    - year: 2013 - 2015
+      items:
+        - "GATE Scholarship for Master's Degree, Ministry of Human Resources & Development, Government of India"
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Research
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+        - Machine Learning
+        - Semantic Segmentation
+        - Transformers
+        - Diffusion Models
+        - Representation Learning
+        - Transfer Learning
+        - Predictive and Generative Problems in Medical Image Analysis
 
-- title: Other Interests
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Proficient
+      items:
+        - Python
+        - NumPy
+        - PyTorch
+        - Scikit-Learn
+        - Git
+        - LaTeX
+        - Matplotlib
+    - title: Familiar
+      items:
+        - Shell Scripting
+        - Pandas
+        - SciPy
+        - Docker
+        - PyTest
+        - C
+        - SQL
+        - Matlab
+        - Keras
+        - HPC (LSF, SLURM)
+
+- title: Reviewer Assignments
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Conference on Neural Information Processing Systems (NeurIPS), 2026
+    - International Conference on Learning Representations (ICLR), 2025 - Present
+    - IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025 - Present
+    - International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), 2024 - Present
+    - IEEE Transactions on Image Processing, 2024 - Present
+    - IEEE Transactions on Neural Networks and Learning Systems, 2023 - Present
+    - IEEE Transactions on Medical Imaging, 2023 - Present
