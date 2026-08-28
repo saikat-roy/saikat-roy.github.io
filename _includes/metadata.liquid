@@ -94,6 +94,8 @@
       {% when 'bluesky_url' %}
         {% capture link %}{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
+      {% when 'cv_pdf' %}
+        {% comment %} not a profile link, excluded from sameAs {% endcomment %}
       {% when 'dblp_url' %}
         {% capture link %}{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
@@ -226,22 +228,41 @@
     {% endcase %}
   {% endfor %}
 
-  <script type="application/ld+json">
-    {
-        "author":
-        {
-            "@type": "Person",
-            "name": "{{ author_name }}"
-        },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-        {% if sameaslinks != blank %}
-        "sameAs": {{ sameaslinks | jsonify }},
-        {% endif %}
-        "name": "{{ author_name }}",
-        "@context": "https://schema.org"
-    }
-  </script>
+  {% if page.layout == 'about' %}
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "mainEntity": {
+              "@type": "Person",
+              "name": "{{ author_name }}",
+              "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
+              "image": "{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}",
+              "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}"
+              {% if sameaslinks != blank %}
+              ,"sameAs": {{ sameaslinks | jsonify }}
+              {% endif %}
+          }
+      }
+    </script>
+  {% else %}
+    <script type="application/ld+json">
+      {
+          "author":
+          {
+              "@type": "Person",
+              "name": "{{ author_name }}"
+          },
+          "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+          "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
+          "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
+          "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+          {% if sameaslinks != blank %}
+          "sameAs": {{ sameaslinks | jsonify }},
+          {% endif %}
+          "name": "{{ author_name }}",
+          "@context": "https://schema.org"
+      }
+    </script>
+  {% endif %}
 {% endif %}
