@@ -73,6 +73,13 @@ ninja.data = [{
           window.open("/assets/pdf/SaikatRoy_CV_2026.pdf", "_blank");
         },
       },{
+        id: 'social-dblp',
+        title: 'DBLP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://dblp.org/pid/59/8399.html", "_blank");
+        },
+      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
@@ -92,6 +99,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/mrsaikatroy", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0002-0809-6524", "_blank");
         },
       },{
         id: 'social-rss',
