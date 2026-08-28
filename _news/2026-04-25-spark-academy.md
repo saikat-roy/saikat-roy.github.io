@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented on *large-scale supervised representation learning with ConvNeXts in Medical Image Segmentation* at the Sprint AI Training for African Medical Imaging Knowledge Translation (SPARK) Academy.
+Presented on *large-scale supervised representation learning with ConvNeXts in Medical Image Segmentation* at the *Sprint AI Training for African Medical Imaging Knowledge Translation (SPARK)* Academy.
