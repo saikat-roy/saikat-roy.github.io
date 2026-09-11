@@ -30,12 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-presented-on-transformers-in-medical-image-analysis-as-part-of-advanced-deep-learning-tutorials-at-bvm-germany",
+        },{id: "news-presented-on-transformers-in-medical-image-analysis-as-part-of-advanced-deep-learning-tutorials-at-bvm-germany",
           title: 'Presented on Transformers in Medical Image Analysis as part of Advanced Deep Learning...',
           description: "",
           section: "News",},{id: "news-presented-on-transformers-and-large-kernel-nets-in-medical-image-analysis-as-part-of-advanced-deep-learning-tutorials-at-bvm-germany",
