@@ -415,6 +415,38 @@ ul.task-list input[type="checkbox"] {
   hyphens: auto;
 }
 
+.cookie-consent-banner {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1050;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  background-color: var(--global-bg-color);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+
+  p {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--global-text-color);
+  }
+
+  .cookie-consent-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+
+  .cookie-consent-accept {
+    background-color: var(--global-theme-color);
+    color: var(--global-hover-text-color);
+  }
+}
+
 // Social (bottom)
 
 .news {

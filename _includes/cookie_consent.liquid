@@ -1,0 +1,58 @@
+<div id="cookie-consent-banner" class="cookie-consent-banner" hidden>
+  <p>
+    This site uses Google Analytics to understand visitor traffic.
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Learn more</a>.
+  </p>
+  <div class="cookie-consent-actions">
+    <button id="cookie-consent-decline" class="btn btn-sm z-depth-0" type="button">Decline</button>
+    <button id="cookie-consent-accept" class="btn btn-sm z-depth-0 cookie-consent-accept" type="button">Accept</button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var CONSENT_KEY = "cookie_consent";
+    var GA_ID = "{{ site.google_analytics }}";
+    var banner = document.getElementById("cookie-consent-banner");
+
+    function loadGA() {
+      var s1 = document.createElement("script");
+      s1.async = true;
+      s1.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+      document.head.appendChild(s1);
+
+      var s2 = document.createElement("script");
+      s2.src = "{{ '/assets/js/google-analytics-setup.js' | relative_url }}";
+      document.head.appendChild(s2);
+    }
+
+    var consent;
+    try {
+      consent = localStorage.getItem(CONSENT_KEY);
+    } catch (e) {
+      consent = null;
+    }
+
+    if (consent === "granted") {
+      loadGA();
+    } else if (consent !== "denied" && banner) {
+      banner.hidden = false;
+    }
+
+    if (banner) {
+      document.getElementById("cookie-consent-accept").addEventListener("click", function () {
+        try {
+          localStorage.setItem(CONSENT_KEY, "granted");
+        } catch (e) {}
+        loadGA();
+        banner.hidden = true;
+      });
+      document.getElementById("cookie-consent-decline").addEventListener("click", function () {
+        try {
+          localStorage.setItem(CONSENT_KEY, "denied");
+        } catch (e) {}
+        banner.hidden = true;
+      });
+    }
+  })();
+</script>
