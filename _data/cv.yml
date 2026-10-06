@@ -110,6 +110,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - "MICCAI 2026 Young Scientist Publication Impact Award for MedNeXt (MICCAI 2023)"
     - year: 2021
       items:
         - Oxford Machine Learning (OxML) Summer School
