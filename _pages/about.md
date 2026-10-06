@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /
+seo_title: Saikat Roy — Machine Learning & Medical Image Analysis
 description: Personal website of Saikat Roy — Senior Machine Learning Engineer and researcher in deep learning for medical image segmentation, Transformers, and representation learning.
 subtitle: Senior Machine Learning Engineer @ mediaire GmbH. Berlin, Germany.
 
